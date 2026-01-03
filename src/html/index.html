@@ -1,49 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paquímetro</title>
+    <link rel="stylesheet" href="../css/index.css">
 </head>
+
 <body>
 
     <header>
-        <h1>Estacionamento</h1>
+        <h1>ESTACIONAMENTO</h1>
+        <p>Insira aqui o tempo que deseja estacionar seu veículo:</p>
     </header>
 
     <main>
-        <section>
-            <p>Insira aqui o tempo que deseja estacionar seu veículo:</p>
-            <label for="tempoEstacionado">Tempo: </label>
-            <input type="number" id="tempoEstacionado">
-        </section>
+        <div class="container">
+            <section class="coluna-esquerda">
 
-        <section>
-            <h2>Tabela de preços</h2>
-            <table>
-                <tr>
-                    <th>Tempo</th>
-                    <th>Valor</th>
-                </tr>
-                <tr>
-                    <td>1h</td>
-                    <td>5,00</td>
-                </tr>
-                <tr>
-                    <td>2h</td>
-                    <td>9,00</td>
-                </tr>
-                <tr>
-                    <td>3h</td>
-                    <td>12,00</td>
-                </tr>
-            </table>
-        </section>
+                <input type="number" id="tempoEstacionado" placeholder="Tempo">
+                <button>Calcular</button>
+            </section>
+
+            <section class="coluna-direita">
+                <h2>Tabela de preços</h2>
+                <table>
+                    <tr>
+                        <th>Tempo</th>
+                        <th>Valor</th>
+                    </tr>
+                    <tr>
+                        <td>1h</td>
+                        <td>5,00</td>
+                    </tr>
+                    <tr>
+                        <td>2h</td>
+                        <td>15,00</td>
+                    </tr>
+                    <tr>
+                        <td>3h ou mais</td>
+                        <td>30,00</td>
+                    </tr>
+                </table>
+            </section>
+        </div>
     </main>
 
     <footer>
-        <p>© 2025 Estacionamento Paquímetro</p>
+        <p>© 2025 Estacionamento paquímetro</p>
     </footer>
 
 </body>
+
 </html>
