@@ -9,47 +9,65 @@
 </head>
 
 <body>
+    <!-- Aqui fica o conteúdo principal da página -->
+    <div id="conteudo-principal">
+        <header>
+            <h1>ESTACIONAMENTO</h1>
+            <p>Insira aqui o tempo que deseja estacionar seu veículo:</p>
+        </header>
 
-    <header>
-        <h1>ESTACIONAMENTO</h1>
-        <p>Insira aqui o tempo que deseja estacionar seu veículo:</p>
-    </header>
+        <main>
+            <div class="container">
+                <section class="coluna-esquerda">
 
-    <main>
-        <div class="container">
-            <section class="coluna-esquerda">
+                    <input type="number" id="tempoEstacionado" placeholder="Tempo">
+                    <button>Calcular</button>
+                </section>
 
-                <input type="number" id="tempoEstacionado" placeholder="Tempo">
-                <button>Calcular</button>
-            </section>
+                <section class="coluna-direita">
+                    <h2>Tabela de preços</h2>
+                    <table>
+                        <tr>
+                            <th>Tempo</th>
+                            <th>Valor</th>
+                        </tr>
+                        <tr>
+                            <td>1h</td>
+                            <td>5,00</td>
+                        </tr>
+                        <tr>
+                            <td>2h</td>
+                            <td>15,00</td>
+                        </tr>
+                        <tr>
+                            <td>3h ou mais</td>
+                            <td>30,00</td>
+                        </tr>
+                    </table>
+                </section>
+            </div>
+        </main>
 
-            <section class="coluna-direita">
-                <h2>Tabela de preços</h2>
-                <table>
-                    <tr>
-                        <th>Tempo</th>
-                        <th>Valor</th>
-                    </tr>
-                    <tr>
-                        <td>1h</td>
-                        <td>5,00</td>
-                    </tr>
-                    <tr>
-                        <td>2h</td>
-                        <td>15,00</td>
-                    </tr>
-                    <tr>
-                        <td>3h ou mais</td>
-                        <td>30,00</td>
-                    </tr>
-                </table>
-            </section>
+        <footer>
+            <p>© 2025 Estacionamento paquímetro</p>
+        </footer>
+    </div>
+
+    <!-- Aqui é o modal, que aparece após o click do botão -->
+    <div class="popup">
+        <div class="popup-content">
+            <h1>Reserva concluída</h1>
+
+            <p>Informações da sua reserva:</p>
+
+            <div class="resultado">
+                <p><strong>Horário:</strong> <span id="horario">xx:xx</span></p>
+                <p><strong>Valor:</strong> <span id="valor">xx,xx</span></p>
+                <p><strong>Troco:</strong> <span id="troco">xx,xx</span></p>
+            </div>
+
+            <button class="fecharBotao" onclick="fecharPopup()">Fechar</button>
         </div>
-    </main>
-
-    <footer>
-        <p>© 2025 Estacionamento paquímetro</p>
-    </footer>
 
 </body>
 
